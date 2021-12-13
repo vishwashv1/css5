@@ -1,0 +1,159 @@
+
+*{
+
+    margin:0;
+    padding:0;
+}
+.sky{
+    width:100%;
+    height:100vh;
+    overflow-x:hidden;   
+    background-image: url("sky.png");
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+    position:relative;
+    animation:sky 3000s linear alternate;
+}
+
+@keyframes sky{
+   100%{
+
+   transform : translateX(4px);
+   }
+}
+.foot{
+    width:500%;
+    height:200px;
+    display: block;
+    background-image: url("road.png");
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+    right:0;
+    z-index:1;
+    animation:highway 5s linear infinite;
+}
+@keyframes highway{
+   100%{
+
+   transform : translateX(-2400px);
+   }
+}
+.city{
+    position:absolute;
+    background-image: url("city.png");
+    height:250px;
+    width:500%;
+    bottom:200px;
+    left:0;
+    right:0;
+    z-index:1;
+    display:block;
+    animation:city 20s linear infinite;
+
+}
+@keyframes city{
+    100%{
+        transform:translate(-3400px);
+    }
+}
+.car{
+    width:500px;
+    position: absolute;
+    left:50%;
+    bottom:100px;
+    transform:translate(-50%);
+    z-index: 2;
+}
+.car img{
+    width:100%;
+    animation:car 1s linear infinite;
+}
+@keyframes car{
+    0%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+.wheel{
+    left:50%;
+    bottom:190px;
+    transform:translate(-50%);
+    z-index: 2;
+    position:absolute;
+}
+.wheel img{
+    width:85px;
+    height:85px;
+    animation:wheel 1s linear infinite;
+}
+.back-wheel{
+    left:-204px;
+    position:absolute;
+    
+}
+.front-wheel{
+    left:100px;
+    position:absolute;
+}
+@keyframes wheel{
+ 
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+    
+.top{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+   
+}
+.top2{
+    background-color:orangered;
+    color:black;
+    margin:5px;
+    width:174px;
+    height:55px;
+    font-size:45px;
+    font-weight: bold;
+    margin-top: 0%;
+    
+}
+.top3{
+    background-color: white;
+    color:black;
+    margin:5px;
+    font-size:45px;
+    font-weight: bold;
+    width:364px;
+    height:55px;
+    margin-top: 0%;
+
+    /* width:230px;
+    height:25px; */
+
+}
+.top4{
+    background-color: green;
+    color:color;
+    margin:5px;
+    margin-top: 0%;
+    width:104px;
+    height:55px;
+    /* width:59px;
+    height:25px; */
+    font-size:45px;
+    font-weight: bold;
+    
+}
